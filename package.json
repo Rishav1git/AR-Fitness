@@ -5,8 +5,9 @@
   
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx parcel build src/index.html --dist-dir dist",
-    "start": "npx parcel src/index.html"
+    "prebuild": "chmod +x ./node_modules/.bin/parcel",
+    "build": "parcel build src/index.html --dist-dir dist",
+    "start": "parcel src/index.html"
   },
   "keywords": [],
   "author": "",
